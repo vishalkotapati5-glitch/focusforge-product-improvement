@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import AddTask from "../components/AddTask";
 import TaskList from "../components/TaskList";
-import FocusSessionWidget from "../components/FocusSessionWidget";
+import MotivationWidget from "../components/MotivationWidget";
 import { getTasks } from "../api/taskApi";
 
 export default function Dashboard() {
@@ -44,7 +44,7 @@ export default function Dashboard() {
         </div>
 
         <aside className="sidebar">
-          <FocusSessionWidget tasks={tasks} />
+          <MotivationWidget />
         </aside>
       </div>
     </div>

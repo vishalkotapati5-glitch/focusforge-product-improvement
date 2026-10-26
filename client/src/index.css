@@ -5,10 +5,6 @@
   --sidebar-width: 250px;
 }
 
-* {
-  box-sizing: border-box;
-}
-
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: var(--bg-color);
@@ -21,7 +17,7 @@ body {
 }
 
 .dashboard {
-  width: min(900px, calc(100% - 32px));
+  width: 900px;
   background-color: white;
   padding: 20px;
   border-radius: 8px;
@@ -35,7 +31,6 @@ header {
 
 .main-content {
   display: flex;
-  align-items: flex-start;
   gap: 30px;
 }
 
@@ -45,7 +40,6 @@ header {
 
 .sidebar {
   width: var(--sidebar-width);
-  flex-shrink: 0;
 }
 
 .add-task-form {
@@ -87,117 +81,27 @@ header {
   color: #94a3b8;
 }
 
-.focus-session-widget {
-  background-color: #eff6ff;
-  padding: 18px;
-  border: 1px solid #bfdbfe;
+/* Redesign candidate styles */
+.motivation-widget {
+  background-color: #fffbeb;
+  padding: 15px;
+  border: 1px solid #fde68a;
   border-radius: 8px;
-}
-
-.focus-session-widget h3 {
-  margin: 0 0 8px;
-  font-size: 1rem;
-  color: #1d4ed8;
-}
-
-.focus-session-widget > p {
-  margin: 0 0 16px;
-  font-size: 0.9rem;
-  line-height: 1.4;
-}
-
-.focus-session-widget label {
-  display: block;
-  margin-bottom: 6px;
-  font-size: 0.85rem;
-  font-weight: 600;
-}
-
-.focus-session-widget select {
-  width: 100%;
-  padding: 9px;
-  border: 1px solid #cbd5e1;
-  border-radius: 4px;
-  background-color: white;
-  color: var(--text-color);
-}
-
-.focus-timer {
-  margin: 18px 0 10px;
-  font-size: 2.5rem;
-  font-variant-numeric: tabular-nums;
-  font-weight: 700;
   text-align: center;
-}
-
-.focus-session-widget progress {
-  width: 100%;
-  height: 8px;
-  accent-color: var(--primary-color);
-}
-
-.focus-session-widget .focus-session-status {
-  min-height: 2.5em;
-  margin: 10px 0;
-  font-size: 0.85rem;
-  line-height: 1.4;
-}
-
-.focus-session-controls {
+  min-height: 150px;
   display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.focus-button {
-  min-height: 40px;
-  padding: 9px 12px;
-  border: 0;
-  border-radius: 4px;
-  background-color: var(--primary-color);
-  color: white;
-  cursor: pointer;
+.motivation-widget h3 {
+  margin-top: 0;
+  font-size: 1rem;
+  color: #d97706;
 }
 
-.focus-button-secondary {
-  border: 1px solid #cbd5e1;
-  background-color: white;
-  color: var(--text-color);
-}
-
-.focus-button:disabled {
-  cursor: not-allowed;
-  opacity: 0.55;
-}
-
-@media (max-width: 760px) {
-  body {
-    align-items: flex-start;
-    padding: 16px 0;
-  }
-
-  .main-content {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .task-section,
-  .sidebar {
-    width: 100%;
-  }
-
-  .add-task-form {
-    display: flex;
-    gap: 8px;
-  }
-
-  .add-task-form input {
-    flex: 1;
-    min-width: 0;
-    width: auto;
-  }
-
-  .add-task-form button {
-    margin-left: 0;
-  }
+.motivation-widget p {
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #92400e;
 }
