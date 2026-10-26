@@ -51,7 +51,11 @@ cd server
 npm install
 ```
 
-Create a `.env` file by copying `.env.example` and update the `DATABASE_URL` with your PostgreSQL credentials.
+Copy the sample environment file and update `DATABASE_URL` with your local PostgreSQL credentials. Keep `.env` private and do not commit it.
+
+```powershell
+Copy-Item .env.example .env
+```
 
 Run database migrations.
 

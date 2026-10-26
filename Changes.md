@@ -31,6 +31,9 @@ the server for compatibility, but the client no longer requests it. Focus
 sessions are intentionally kept in page state and are not persisted after a
 reload.
 
+The backend setup now includes a placeholder `.env.example`; real database
+credentials belong only in the ignored local `.env` file.
+
 ## How this helps
 
 Instead of showing passive encouragement, the dashboard helps users commit to
